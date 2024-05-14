@@ -8,7 +8,7 @@ export interface <%= Component_name %>Props {
   children?: ReactNode
 }
 
-export default function <%= Component_name %>(props: <%= Component_name %>Props) {
+export const <%= Component_name %> = (props: <%= Component_name %>Props) => {
   const { children } = props
 
   return (
