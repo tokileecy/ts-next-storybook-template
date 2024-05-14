@@ -14,6 +14,7 @@ services:
       - DOCS_PORT=$DOCS_PORT
     volumes:
       - .:/srv/app
+      - /dev/null:/srv/app/.yarn/unplugged
       - /dev/null:/srv/app/docker-compose.yml
     working_dir: /srv/app
     command: >
