@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import * as styles from './HomePage.styles'
-import Task1 from './Task1'
+import * as styles from './page.styles'
+import Task1 from './task-1'
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <div className={styles.root}>
+    <main className={styles.root}>
       <Head>
         <title>ts-next-storybook-template</title>
         <meta name="description" content="ts-next-storybook-template" />
@@ -17,6 +17,6 @@ export default function HomePage() {
           <Task1 />
         </div>
       </main>
-    </div>
+    </main>
   )
 }

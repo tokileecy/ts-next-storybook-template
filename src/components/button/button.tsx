@@ -1,5 +1,5 @@
 import { MouseEventHandler, ReactNode } from 'react'
-import * as styles from './Button.styles'
+import * as styles from '@/components/button/button.styles'
 
 export interface ButtonProps {
   children?: ReactNode
@@ -9,7 +9,7 @@ export interface ButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement>
 }
 
-export default function Button(props: ButtonProps) {
+export const Button = (props: ButtonProps) => {
   const { children, onClick } = props
 
   return (
