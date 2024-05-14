@@ -18,7 +18,7 @@ module.exports = {
         const { component_name, dir } = answers
         const Component_name =  component_name.charAt(0).toUpperCase() + component_name.slice(1)
         const path = `${ dir ? `${dir}/` : `` }${Component_name}`
-        const absPath = `components/${path}`
+        const absPath = `src/components/${path}`
         return { ...answers, Component_name, path, absPath }
       })
   }
