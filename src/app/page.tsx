@@ -1,16 +1,15 @@
-import Head from 'next/head'
-import * as styles from './page.styles'
-import Task1 from './task-1'
+import type { Metadata } from 'next'
+import * as styles from '@/app/page.styles'
+import Task1 from '@/app/task-1'
+
+export const metadata: Metadata = {
+  title: 'ts-next-storybook-template',
+  description: 'ts-next-storybook-template',
+}
 
 export default function Home() {
   return (
     <main className={styles.root}>
-      <Head>
-        <title>ts-next-storybook-template</title>
-        <meta name="description" content="ts-next-storybook-template" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>ts-next-storybook-template</h1>
         <div className={styles.content}>
