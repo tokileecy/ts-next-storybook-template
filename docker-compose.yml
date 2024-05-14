@@ -17,4 +17,4 @@ services:
       - /dev/null:/srv/app/docker-compose.yml
     working_dir: /srv/app
     command: >
-      /bin/sh -c "yarn dev & yarn storybook"
+      /bin/sh -c "yarn && (yarn dev & yarn storybook)"
