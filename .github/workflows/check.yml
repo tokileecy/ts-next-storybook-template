@@ -4,11 +4,11 @@ on:
     branches:
       - "*"
 jobs:
-  eslint-and-build: 
+  eslint-and-build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 16.x]
+        node-version: [18.x]
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
