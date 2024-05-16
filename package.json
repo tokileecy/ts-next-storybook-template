@@ -6,7 +6,6 @@
     "dev": "next dev -p ${WEB_PORT:-3000}",
     "build": "next build",
     "start": "next start -p ${WEB_PORT:-3000}",
-    "export": "next build && next export",
     "eslint:check": "eslint .",
     "eslint:fix": "eslint . --fix",
     "storybook": "storybook dev -p ${DOCS_PORT:-6006}",
